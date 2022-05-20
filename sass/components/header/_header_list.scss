@@ -1,0 +1,99 @@
+.header__info-list{
+    margin-top: 302px;
+    display: flex;
+    flex-direction: column-reverse;
+
+    @media screen and (min-width: 768px) {
+        flex-direction: column;
+        margin: auto;
+        margin-right: 0;
+    }
+    @media screen and (min-width: 1200px) {
+        flex-direction: row;
+        margin: auto;
+        margin-right: 0;
+    }
+}
+.header__info-list li {
+    margin-bottom: 32px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 10px;
+    }
+    // @media screen and (min-width: 1200px) {
+    //     margin-bottom: auto;
+    //     margin-right: 30px;
+    // }
+}
+.header__info-list li:nth-child(1) {
+    margin-bottom: 0;
+    @media screen and (min-width: 768px) {
+        margin-bottom: 10px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .header__info-list li:nth-child(2) {
+        margin-bottom: 0;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .header__info-list li {
+        margin: 0;
+        margin-right: 30px;
+    }
+    .header__info-list li:nth-child(1) {
+        margin-bottom: 0;
+    }
+    .header__info-list li:last-child {
+        margin-right: 0;
+    }
+}
+.header__info-link {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    color: $primary-text-color;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color;
+    &:hover,
+    &:focus {
+        color: $hover-color;   
+        font-size: 34px; 
+    }
+    @media screen and (min-width: 768px) {
+        font-size: 12px;
+        &:hover,
+        &:focus {
+            font-size: 12px; 
+    }
+    }
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+        line-height: 1.14;
+        &:hover,
+        &:focus {
+            font-size: 14px; 
+    }
+    }
+}
+.header__info-icon {
+    margin-right: 10px;
+    fill: currentColor;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: fill;
+    .header__info-link:hover &,
+    .header__info-link:focus & {
+        fill: $hover-color;
+    }
+}
+@media screen and (max-width: 767px) {
+    .header__info-icon {
+      display: none;
+    }
+}
