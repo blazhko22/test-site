@@ -1,17 +1,18 @@
 .header__link-logo {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 1.17;
-    font-family: Raleway, sans-serif;
-    color: $hover-color;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.2;
+    color: $title-text-color;
     text-decoration: none;
     display: inline-block;
 
-    @media screen and (min-width: 1200px) {
-        font-size: 26px;
-        line-height: 1.2;
-    }
+    // @media screen and (min-width: 1600px) {
+    //     font-size: 26px;
+    //     line-height: 1.2;
+    // }
 }
-.header__logo-color {
-    color: $extra-color;
-}
+// .header__logo-color {
+//     color: $extra-color;
+// }
