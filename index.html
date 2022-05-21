@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WebStudio</title>
+    <title>Company Name</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="./css/main.min.css">
@@ -125,46 +125,361 @@
                 </div>
             </section>            
             <!-- Особености -->
-            <section class="specifics">
+            <section class="posts">
                 <div class="container">
-                    <ul class="specifics__list">
-                        <li>
-                            <div class="specifics__icon">                        
-                                <svg width="70" height="70">
-                                    <use href="./img/icons.svg#icon-antenna"></use>
-                                </svg>
-                            </div>    
-                            <h3 class="specifics__title">Внимание к деталям</h3>
-                            <p class="specifics__text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
-                        </li>
-                        <li>
-                            <div class="specifics__icon">
-                                <svg width="70" height="70">
-                                    <use href="./img/icons.svg#icon-clock"></use>
-                                </svg>
-                            </div>    
-                            <h3 class="specifics__title">Пунктуальность</h3>
-                            <p class="specifics__text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
-                        </li>
-                        <li>
-                            <div class="specifics__icon">
-                                <svg width="70" height="70">
-                                    <use href="./img/icons.svg#icon-diagram"></use>
-                                </svg>
-                            </div>    
-                            <h3 class="specifics__title">Планирование</h3>
-                            <p class="specifics__text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
-                        </li>
-                        <li>
-                            <div class="specifics__icon">
-                                <svg width="70" height="70">
-                                    <use href="./img/icons.svg#icon-astronaut"></use>
-                                </svg>
+                    <div class="posts__container">
+                        <div class="posts__box">
+                            <form class="posts__box-form">
+                                <label for="name"  class="posts__box-label"></label>                                
+                                <input type="text" name="name" id="name" class="posts__box-input" type="text" name="username" placeholder="Search blog" />
+                                <button class="posts__box-button" type="submit">
+                                    <svg class="posts__box-button-svg"
+                                        width="20"
+                                        height="20"
+                                    >
+                                    <use href="./img/1/icon.svg#icon-search"></use>
+                                    </svg>
+                                </button>
+                            </form>
+                        </div>
+                        <div class="posts__navigation">
+                            <span class="posts__navigation">TAGS:</span>
+                            <ul class="posts__navigation-list">
+                                <li class="posts__navigation-list-item">bitcoin</li>
+                                <li class="posts__navigation-list-item">bittorrent</li>
+                                <li class="posts__navigation-list-item">irc</li>
+                                <li class="posts__navigation-list-item">news</li>
+                                <li class="posts__navigation-list-item">privacy</li>
+                                <li class="posts__navigation-list-item">programming</li>
+                                <li class="posts__navigation-list-item">security</li>
+                            </ul>
+                            <ul class="posts__navigation-info">
+                                <li class="posts__navigation-info-item">team</li>
+                                <li class="posts__navigation-info-item">contact</li>
+                            </ul>                        
+                        </div>
+                        <div class="posts__info">
+                            <div class="posts__info-recent">
+                                <h4 class="posts__info-recent-title">Recent posts</h4>
+                                <ul class="posts__info-recent-list">
+                                    <li class="posts__info-recent-list-item">
+                                        <img class="posts__info-recent-list-item-image" 
+                                            src="./img/1/Internet.jpg"
+                                            srcset="./img/1/Internet@2x.jpg,
+                                            ./img/1/Internet@3x.jpg"
+                                            alt="TV"
+                                        >                               
+                                        <div class="posts__info-recent-list-item-box">
+                                            <p class="posts__info-recent-list-item-box-text">
+                                                The Internet Cannot be Trusted – Beamsplitters, Backdoors, and Broken Promises
+                                            </p>
+                                            <div class="posts__info-recent-list-item-box-block">
+                                                <div class="posts__info-recent-list-item-box-block-title">
+                                                    <p class="posts__info-recent-list-item-box-block-title-name">
+                                                        Derek Zimmer
+                                                    </p>
+                                                    <span class="posts__info-recent-list-item-box-block-title-slash">
+                                                        |
+                                                    </span>
+                                                    <p class="posts__info-recent-list-item-box-block-title-date">
+                                                        JUL 25, 2018
+                                                    </p>
+                                                </div>
+                                                <span class="posts__info-recent-list-item-box-block-text">
+                                                    Governments, Networking, Open Source, Privacy, Security
+                                                </span>
+                                                <div class="posts__info-recent-list-item-box-block-comment">
+                                                    <svg class="posts__info-recent-list-item-box-block-comment-svg"
+                                                        width="16"
+                                                        height="16"
+                                                    >
+                                                    <use href="./img/1/icon.svg#icon-comment"></use>
+                                                    </svg>
+                                                    <span class="posts__info-recent-list-item-box-block-comment-namber">0</span>
+                                                </div>
+                                            </div>
+                                        </div>                                       
+                                    </li>
+                                    <li class="posts__info-recent-list-item">
+                                        <img class="posts__info-recent-list-item-image" 
+                                            src="./img/1/Plane.jpg"
+                                            srcset="./img/1/Plane@2x.jpg,
+                                            ./img/1/Plane@3x.jpg"
+                                            alt="TV"
+                                        >                               
+                                        <div class="posts__info-recent-list-item-box">
+                                            <p class="posts__info-recent-list-item-box-text">
+                                                How to get cheaper flights using a VPN
+                                            </p>
+                                            <div class="posts__info-recent-list-item-box-block">
+                                                <div class="posts__info-recent-list-item-box-block-title">
+                                                    <p class="posts__info-recent-list-item-box-block-title-name">
+                                                        Jayson
+                                                    </p>
+                                                    <span class="posts__info-recent-list-item-box-block-title-slash">
+                                                        |
+                                                    </span>
+                                                    <p class="posts__info-recent-list-item-box-block-title-date">
+                                                        JUL 24, 2018
+                                                    </p>
+                                                </div>
+                                                <span class="posts__info-recent-list-item-box-block-text">
+                                                    Guides
+                                                </span>
+                                                <div class="posts__info-recent-list-item-box-block-comment">
+                                                    <svg class="posts__info-recent-list-item-box-block-comment-svg"
+                                                        width="16"
+                                                        height="16"
+                                                    >
+                                                    <use href="./img/1/icon.svg#icon-comment"></use>
+                                                    </svg>
+                                                    <span class="posts__info-recent-list-item-box-block-comment-namber">0</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="posts__info-recent-list-item">
+                                        <img class="posts__info-recent-list-item-image" 
+                                            src="./img/1/Neutrality.jpg"
+                                            srcset="./img/1/Neutrality@2x.jpg,
+                                            ./img/1/Neutrality@3x.jpg"
+                                            alt="TV"
+                                        >                               
+                                        <div class="posts__info-recent-list-item-box">
+                                            <p class="posts__info-recent-list-item-box-text">
+                                                Net Neutrality was repealed, but the fight is far from over
+                                            </p>
+                                            <div class="posts__info-recent-list-item-box-block">
+                                                <div class="posts__info-recent-list-item-box-block-title">
+                                                    <p class="posts__info-recent-list-item-box-block-title-name">
+                                                        Chris Miller
+                                                    </p>
+                                                    <span class="posts__info-recent-list-item-box-block-title-slash">
+                                                        |
+                                                    </span>
+                                                    <p class="posts__info-recent-list-item-box-block-title-date">
+                                                        JUL 22, 2018
+                                                    </p>
+                                                </div>
+                                                <span class="posts__info-recent-list-item-box-block-text">
+                                                    Governments, Net Neutrality, News
+                                                </span>
+                                                <div class="posts__info-recent-list-item-box-block-comment">
+                                                    <svg class="posts__info-recent-list-item-box-block-comment-svg"
+                                                        width="16"
+                                                        height="16"
+                                                    >
+                                                    <use href="./img/1/icon.svg#icon-comment"></use>
+                                                    </svg>
+                                                    <span class="posts__info-recent-list-item-box-block-comment-namber">0</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul class="posts__info-recent-tolist">
+                                    <li class="posts__info-recent-list-item">
+                                        <img class="posts__info-recent-list-item-image" 
+                                            src="./img/1/Internet.jpg"
+                                            srcset="./img/1/Internet@2x.jpg,
+                                            ./img/1/Internet@3x.jpg"
+                                            alt="TV"
+                                        >                               
+                                        <div class="posts__info-recent-list-item-box">
+                                            <p class="posts__info-recent-list-item-box-text">
+                                                The Internet Cannot be Trusted – Beamsplitters, Backdoors, and Broken Promises
+                                            </p>
+                                            <div class="posts__info-recent-list-item-box-block">
+                                                <div class="posts__info-recent-list-item-box-block-title">
+                                                    <p class="posts__info-recent-list-item-box-block-title-name">
+                                                        Derek Zimmer
+                                                    </p>
+                                                    <span class="posts__info-recent-list-item-box-block-title-slash">
+                                                        |
+                                                    </span>
+                                                    <p class="posts__info-recent-list-item-box-block-title-date">
+                                                        JUL 25, 2018
+                                                    </p>
+                                                </div>
+                                                <span class="posts__info-recent-list-item-box-block-text">
+                                                    Governments, Networking, Open Source, Privacy, Security
+                                                </span>
+                                                <div class="posts__info-recent-list-item-box-block-comment">
+                                                    <svg class="posts__info-recent-list-item-box-block-comment-svg"
+                                                        width="16"
+                                                        height="16"
+                                                    >
+                                                    <use href="./img/1/icon.svg#icon-comment"></use>
+                                                    </svg>
+                                                    <span class="posts__info-recent-list-item-box-block-comment-namber">0</span>
+                                                </div>
+                                            </div>
+                                        </div>                                       
+                                    </li>
+                                    <li class="posts__info-recent-list-item">
+                                        <img class="posts__info-recent-list-item-image" 
+                                            src="./img/1/Plane.jpg"
+                                            srcset="./img/1/Plane@2x.jpg,
+                                            ./img/1/Plane@3x.jpg"
+                                            alt="TV"
+                                        >                               
+                                        <div class="posts__info-recent-list-item-box">
+                                            <p class="posts__info-recent-list-item-box-text">
+                                                How to get cheaper flights using a VPN
+                                            </p>
+                                            <div class="posts__info-recent-list-item-box-block">
+                                                <div class="posts__info-recent-list-item-box-block-title">
+                                                    <p class="posts__info-recent-list-item-box-block-title-name">
+                                                        Jayson
+                                                    </p>
+                                                    <span class="posts__info-recent-list-item-box-block-title-slash">
+                                                        |
+                                                    </span>
+                                                    <p class="posts__info-recent-list-item-box-block-title-date">
+                                                        JUL 24, 2018
+                                                    </p>
+                                                </div>
+                                                <span class="posts__info-recent-list-item-box-block-text">
+                                                    Guides
+                                                </span>
+                                                <div class="posts__info-recent-list-item-box-block-comment">
+                                                    <svg class="posts__info-recent-list-item-box-block-comment-svg"
+                                                        width="16"
+                                                        height="16"
+                                                    >
+                                                    <use href="./img/1/icon.svg#icon-comment"></use>
+                                                    </svg>
+                                                    <span class="posts__info-recent-list-item-box-block-comment-namber">0</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="posts__info-recent-list-item">
+                                        <img class="posts__info-recent-list-item-image" 
+                                            src="./img/1/Neutrality.jpg"
+                                            srcset="./img/1/Neutrality@2x.jpg,
+                                            ./img/1/Neutrality@3x.jpg"
+                                            alt="TV"
+                                        >                               
+                                        <div class="posts__info-recent-list-item-box">
+                                            <p class="posts__info-recent-list-item-box-text">
+                                                Net Neutrality was repealed, but the fight is far from over
+                                            </p>
+                                            <div class="posts__info-recent-list-item-box-block">
+                                                <div class="posts__info-recent-list-item-box-block-title">
+                                                    <p class="posts__info-recent-list-item-box-block-title-name">
+                                                        Chris Miller
+                                                    </p>
+                                                    <span class="posts__info-recent-list-item-box-block-title-slash">
+                                                        |
+                                                    </span>
+                                                    <p class="posts__info-recent-list-item-box-block-title-date">
+                                                        JUL 22, 2018
+                                                    </p>
+                                                </div>
+                                                <span class="posts__info-recent-list-item-box-block-text">
+                                                    Governments, Net Neutrality, News
+                                                </span>
+                                                <div class="posts__info-recent-list-item-box-block-comment">
+                                                    <svg class="posts__info-recent-list-item-box-block-comment-svg"
+                                                        width="16"
+                                                        height="16"
+                                                    >
+                                                    <use href="./img/1/icon.svg#icon-comment"></use>
+                                                    </svg>
+                                                    <span class="posts__info-recent-list-item-box-block-comment-namber">0</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <button class="posts__info-recent-button">older posts</button>
                             </div>
-                            <h3 class="specifics__title">Современные технологии</h3>
-                            <p class="specifics__text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
-                        </li>
-                    </ul>
+                            <div class="posts__info-search">
+                                <div class="posts__info-search-announcements">
+                                    <div class="posts__info-search-announcements-box">
+                                        <svg class="posts__info-search-announcements-box-svg"
+                                            width="60"
+                                            height="60"
+                                        >
+                                        <use href="./img/1/icon.svg#icon-announcements"></use>
+                                        </svg>
+                                        <h4 class="posts__info-search-announcements-box-title">Announcements</h4>
+                                    </div>
+                                    <ul class="posts__info-search-announcements-list">
+                                        <li class="posts__info-search-announcements-list-item">
+                                            <span class="point">•</span>
+                                            <p>Changes (Live Chat, Less Censorship, More Access)</p>
+                                        </li>
+                                        <li class="posts__info-search-announcements-list-item">
+                                            <span class="point">•</span>
+                                            <p>New Servers (US Washington DC)</p>
+                                        </li>
+                                        <li class="posts__info-search-announcements-list-item">
+                                            <span class="point">•</span>
+                                            <p>New Servers (US Denver)</p>
+                                        </li>
+                                        <li class="posts__info-search-announcements-list-item">
+                                            <span class="point">•</span>
+                                            <p>Open Source: Releasing the PIA iOS Client</p>
+                                        </li>
+                                        <li class="posts__info-search-announcements-list-item">
+                                            <span class="point">•</span>
+                                            <p>Opera Extension is now available</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="posts__info-search-announcements popular">
+                                    <div class="posts__info-search-announcements-box">
+                                        <svg class="posts__info-search-announcements-box-svg"
+                                            width="60"
+                                            height="60"
+                                        >
+                                        <use href="./img/1/icon.svg#icon-popular"></use>
+                                        </svg>
+                                        <h4 class="posts__info-search-announcements-box-title">Popular posts</h4>
+                                    </div>
+                                    <ul class="posts__info-search-announcements-list">
+                                        <li class="posts__info-search-announcements-list-item">
+                                            <span class="point">•</span>
+                                            <p>The Gift of Privacy</p>
+                                        </li>
+                                        <li class="posts__info-search-announcements-list-item">
+                                            <span class="point">•</span>
+                                            <p>UK High Court Censors Many Links To Popcorn Time: Useless, Dangerous Gesture</p>
+                                        </li>
+                                        <li class="posts__info-search-announcements-list-item">
+                                            <span class="point">•</span>
+                                            <p>About the PIA Client Security and VPN Security in General</p>
+                                        </li>
+                                        <li class="posts__info-search-announcements-list-item">
+                                            <span class="point">•</span>
+                                            <p>A Private Net Is Just As Fundamental A Right As Freedom Of Speech</p>
+                                        </li>
+                                        <li class="posts__info-search-announcements-list-item">
+                                            <span class="point">•</span>
+                                            <p>Wiretapping Today Just Doesn’t Mean What The Word Meant In The 1990s, So Don’t Fall For That Lie</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <img class="posts__info-search-img" 
+                                    src="./img/1/Brother.jpg"
+                                    srcset="./img/1/Brother@2x.jpg,
+                                            ./img/1/Brother@3x.jpg"
+                                    alt="Brother"
+                                >
+                                <div class="posts__info-search-tag">
+                                    <h4 class="posts__info-search-tag-title">Tag cloud</h4>
+                                    <img class="posts__info-search-tag-img" 
+                                        src="./img/1/Tag.jpg"
+                                        srcset="./img/1/Tag@2x.jpg,
+                                                ./img/1/Tag@3x.jpg"
+                                        alt="Brother"
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
             <!-- Чем мы занимаемся -->

@@ -12,8 +12,8 @@ ul {
     padding: 0;
 }
 .container {
-    max-width: 1200px;
-    padding: 0 15px;
+    max-width: 1600px;
+    padding: 0 11px;
     margin: 0 auto;
 
     @media screen and (min-width: 480px) {
@@ -22,8 +22,8 @@ ul {
     @media screen and (min-width: 768px) {
         width: 768px;
     }
-    @media screen and (min-width: 1200px) {
-        width: 1200px;
+    @media screen and (min-width: 1600px) {
+        width: 1600px;
     }
 }
 h1,h2,h3,h4,h5,h6,p {
