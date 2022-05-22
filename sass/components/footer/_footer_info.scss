@@ -1,47 +1,39 @@
-.footer__info {
+.footer__block-info {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    @media screen and (min-width: 768px) {
-        margin-left: 76px;
-    }
-    @media screen and (min-width: 1200px) {
-        margin: 0;
-    }
+    justify-content: space-between;
+    margin-top: 54px;
 }
-.footer__logo-color {
-    color: $primary-bg-color;
-}
-.footer__address {
+.footer__block-info-box-title {
+    font-family: 'Roboto';
     font-style: normal;
-    margin-top: 20px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.28;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #323642;
 }
-.footer__address-list {
-    margin: 0px;
-    padding: 0px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    @media screen and (min-width: 1200px) {
-        align-items: flex-start;
+.footer__block-info-box-company {
+    margin-top: 18px;
+}
+.footer__block-info-box-company-list {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.57;
+    color: #889099;
+    margin-bottom: 10px;
+    &:last-child {
+        margin-bottom: 0;
     }
 }
-.footer__address-list .footer__list-info+ .footer__list-info {
-    margin-top: 8px;
-    @media screen and (min-width: 1200px) {
-        margin-top: 9px;
-    }
+.footer__block-info-utilities-programs-list {
+    margin-top: 18px;
 }
-.footer__address-maps {
-    text-decoration: none;
-    font-size: 14px;
-    line-height: 1.71;
-    color: $primary-bg-color;
-    
+.footer__block-info-utilities-more {
+    margin-top: 35px;
 }
-.footer__list-link {
-    font-size: 14px;
-    line-height: 1.71;
-    color: rgba(255, 255, 255, 0.6);
-    text-decoration: none;
+.footer__block-info-utilities-more-list {
+    margin-top: 18px;
 }
