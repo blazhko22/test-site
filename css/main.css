@@ -919,13 +919,7 @@ img {
   margin-top: 15px;
 }
 
-@media screen and (max-width: 1199px) {
-  .business {
-    display: none;
-  }
-}
-
-.business {
+.money {
   padding-bottom: 94px;
 }
 
