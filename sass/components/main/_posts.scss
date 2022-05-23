@@ -64,6 +64,9 @@
     display: flex;
     flex-direction: column;
     max-width: 480px;
+    @media screen and (min-width: 768px) {
+        max-width: 768px;
+    }
 }
 .posts__info-recent-title {
     font-family: 'Roboto';
@@ -77,18 +80,31 @@
     margin-top: 40px;
 }
 .posts__info-recent-list-item {
-    margin-top: 20px;
-    
+    margin-top: 20px;  
+    border-bottom: solid 1px $border-solid;  
     &:first-child {
         margin-top: 0;
     }
-    // &:last-child {
-    //     margin-bottom: 0;
-    // }
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }    
+}
+.posts__info-recent-list-item-image {
+    @media screen and (min-width: 768px) {
+        width: 400px; 
+        height: 250px;   
+        margin-bottom: 49px;    
+    }
 }
 .posts__info-recent-list-item-box {
     margin-top: 20px;
-    border-bottom: solid 1px $border-solid;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 0;
+        padding: 0 10px;
+    }
 }
 .posts__info-recent-list-item-box-text {
     font-family: 'Roboto';
@@ -97,10 +113,17 @@
     font-size: 24px;
     line-height: 1.42;
     color: $primary-title-text-color;
+    // @media screen and (min-width: 768px) {
+    //     display: block;
+    // }
 }
 .posts__info-recent-list-item-box-block {
     margin-top: 14px;
     margin-bottom: 49px;
+    @media screen and (min-width: 768px) {
+        margin-top: 0;
+    }
+
 }
 .posts__info-recent-list-item-box-block-title {
     display: flex;
@@ -167,13 +190,27 @@
     margin-top: 60px;
     border: 1px solid $extra-color;
     border-radius: 30px;
+    @media screen and (min-width: 768px) {
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 .posts__info-search {
     margin-top: 60px;
+    // @media screen and (min-width: 768px) {
+    //     display: flex;
+    //     flex-direction: column;
+    //     flex-wrap: wrap;
+    // }
 }
-// .posts__info-search-announcements {
-   
-// }
+.posts__info-search-announcements {
+    @media screen and (min-width: 768px) {
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
 .posts__info-search-announcements-box {
     display: flex;
     align-items: center;
@@ -217,9 +254,19 @@
 }
 .posts__info-search-img {
     margin-top: 30px;
+    @media screen and (min-width: 768px) {
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 .posts__info-search-tag {
     margin-top: 60px;
+    @media screen and (min-width: 768px) {
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 .posts__info-search-tag-title {
     font-family: 'Roboto';

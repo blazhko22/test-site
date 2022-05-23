@@ -14,7 +14,7 @@
    font-size: 32px;
    line-height: 1.37;
    text-align: center;
-   color: #FFFFFF; 
+   color: $primary-bg-color; 
    padding: 0 30px; 
  }
  .money__list {
@@ -24,17 +24,16 @@
    display: flex;
    flex-direction: column;
    align-items: center;
-   background-color: #EBECED;
-   border: 4px solid #EBECED;
+   background-color: $border-solid;
+   border: 4px solid $border-solid;
    border-radius: 6px;
    margin-bottom: 20px;
    padding: 44px 53px;
-   // cursor: pointer;
    &:last-child {
       margin-bottom: 0;
    }
    &:hover {
-      border: 4px solid #FF8D00;
+      border: 4px solid $warn-text-color;
    }
  }
  .money__list-item-title {
@@ -45,20 +44,20 @@
    line-height: 1.28;
    letter-spacing: 0.8px;
    text-transform: uppercase;
-   color: #323642;
+   color: $primary-text-color;
  }
  .money__list-item-line {
     display: block;
     width: 24px;
     margin-top: 12px;
-    border-bottom: solid 2px #26a72c;
+    border-bottom: solid 2px $line-color;
  }
  .money__list-item-box {
     display: flex;
     align-items: flex-end;
     margin-top: 16px;
     padding-bottom: 18px;
-    border-bottom: solid 1px #EBECED;
+    border-bottom: solid 1px $border-solid;
  }
  .money__list-item-box-block {
     display: flex;
@@ -70,7 +69,7 @@
    font-weight: 300;
    font-size: 24px;
    line-height: 1.33;
-   color: #22252E;
+   color: $primary-title-text-color;
  }
  .money__list-item-box-price {
    font-family: 'Roboto';
@@ -79,7 +78,7 @@
    font-size: 56px;
    line-height: 1.18;
    letter-spacing: -1.5px;
-   color: #22252E;
+   color: $primary-title-text-color;
  }
  .money__list-item-box-token { 
    font-family: 'Roboto';
@@ -87,7 +86,7 @@
    font-weight: 300;
    font-size: 24px;
    line-height: 1.33;
-   color: #22252E;
+   color: $primary-title-text-color;
  }
  .money__list-item-text {
    font-family: 'Roboto';
@@ -95,26 +94,26 @@
    font-weight: 400;
    font-size: 14px;
    line-height: 1.57;
-   color: #323642;
+   color: $primary-text-color;
    margin-top: 27px;
  }
  .money__list-item-button {
     margin-top: 30px;
-    border: 1px solid #4CB649;
+    border: 1px solid $extra-color;
     border-radius: 30px;
     padding-top: 11px;
     padding-bottom: 11px;
-    background-color: #EBECED;
+    background-color: $border-solid;
     width: 100%;
     cursor: pointer;
     &:hover {
-       background-color: #FF8D00;
-       border: 1px solid #FF8D00;
+       background-color: $warn-text-color;
+       border: 1px solid $warn-text-color;
     }
  }
  .money__list-item-text-price {
     text-decoration-line: line-through;
-    color: #F24458;
+    color: $price-color;
     margin-right: 8px;
  }
  .money__list-item-text-save {
@@ -123,7 +122,7 @@
    font-weight: 700;
    font-size: 14px;
    line-height: 1.57;
-   color: #323642;
+   color: $primary-text-color;
  }
 .money__block {
    display: flex;
@@ -140,7 +139,7 @@
    font-weight: 300;
    font-size: 18px;
    line-height: 1.56;
-   color: #FFFFFF;
+   color: $primary-bg-color;
 }
 .money__block-list {
    display: flex;
@@ -173,8 +172,8 @@
    line-height: 1.28;
    letter-spacing: 0.8px;
    text-transform: uppercase;
-   color: #4CB649;
+   color: $extra-text-color;
 }
 .money__roster-item-text-svg {
-   fill: #4CB649;
+   fill: $extra-text-color;
 }

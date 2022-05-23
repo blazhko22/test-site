@@ -50,7 +50,7 @@
     fill: $extra-color;
     &:focus,
     &:hover {
-        fill: $hover-color;
+        fill: $extra-color;
     }
     @media screen and (min-width: 1200px) {
         right: 9px;
@@ -80,11 +80,11 @@
     margin-bottom: 20px;
 }
 .modal__from-box:focus-within > .modal__from-input {
-    border-color: $hover-color;
+    border-color: $extra-color;
     outline: none;
 }
 .modal__from-box:focus-within > .modal__from-icon {
-    fill: $hover-color;
+    fill: $extra-color;
 }
 .modal__from-label {
     font-size: 12px;
@@ -145,8 +145,8 @@
     appearance: none;
 }
 .modal__from-checkbox-input:checked + .modal__from-checkbox-icon {
-    background-color: $hover-color;
-    border-color: $hover-color;
+    background-color: $extra-color;
+    border-color: $extra-color;
     background-image: url(../img/icon_checked.svg);
     background-size: contain;
     background-origin: border-box;    
@@ -163,7 +163,7 @@
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-decoration-line: underline;
-    color: $hover-color;
+    color: $extra-color;
     @media screen and (min-width: 1200px) {
         font-size: 14px;
     }
@@ -174,7 +174,7 @@
     justify-content: center;
     width: 200px;
     height: 50px;
-    background-color: $hover-color;
+    background-color: $extra-color;
     box-shadow: 0px 4px 4px $box-shadow;
     border-radius: 4px;
     border: none;

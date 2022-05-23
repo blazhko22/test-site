@@ -11,7 +11,7 @@
     line-height: 1.28;
     letter-spacing: 1px;
     text-transform: uppercase;
-    color: #323642;
+    color: $primary-text-color;
 }
 .footer__block-info-box-company {
     margin-top: 18px;
@@ -22,7 +22,7 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 1.57;
-    color: #889099;
+    color: $secondary-text-color;
     margin-bottom: 10px;
     &:last-child {
         margin-bottom: 0;

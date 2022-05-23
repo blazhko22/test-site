@@ -13,7 +13,7 @@
     line-height: 1.28;
     letter-spacing: 1px;
     text-transform: uppercase;
-    color: #323642;
+    color: $primary-text-color;
 }
 .footer__block-box-legal-list {
     margin-top: 18px;
@@ -24,15 +24,12 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 1.57;
-    color: #889099;
+    color: $secondary-text-color;
     margin-bottom: 10px;
     &:last-child {
         margin-bottom: 0;
     }
 }
-// .footer__block-box-social {
-//     display: flex;
-// }
 .footer__block-box-social-title {
     font-family: 'Roboto';
     font-style: normal;
@@ -41,7 +38,7 @@
     line-height: 1.28;
     letter-spacing: 1px;
     text-transform: uppercase;
-    color: #323642;
+    color: $primary-text-color;
 }
 .footer__block-box-social-list {
     display: flex;
@@ -52,9 +49,16 @@
 }
 .footer__block-box-social-list-item {
     flex-basis: calc((100% - 30px) / 3);
+    margin-bottom: 27px;
+    &:nth-child(n+4) {
+        margin-bottom: 0;
+    }
 }
 .footer__block-box-about {
     margin-top: 40px;
+}
+.footer__block-box-social-list-item-svg {
+    fill: $secondary-bg-color;
 }
 .footer__block-box-about-title {
     font-family: 'Roboto';
@@ -64,7 +68,7 @@
     line-height: 1.28;
     letter-spacing: 1px;
     text-transform: uppercase;
-    color: #323642;
+    color: $primary-text-color;
 }
 .footer__block-box-about-text {
     font-family: 'Roboto';
@@ -72,7 +76,7 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 1.57;
-    color: #889099;
+    color: $secondary-text-color;
     margin-top: 18px;
 }
 .footer__block-box-about-info {
@@ -81,7 +85,7 @@
     font-weight: 400;
     font-size: 12px;
     line-height: 16px;
-    color: #889099;
+    color: $secondary-text-color;
     margin-top: 18px;
 }
 .top-bottom {

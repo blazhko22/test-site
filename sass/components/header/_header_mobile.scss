@@ -6,7 +6,6 @@
     justify-content: center;
   
     margin-top: 10px;
-    // margin-left: auto;
     margin-bottom: 10px;
     padding: 0;
     background-color: transparent;
@@ -22,5 +21,5 @@
   }
 .menu-toggle:hover,
 .menu-toggle:focus {
-  fill: $hover-color;
+  fill: $extra-color;
 }

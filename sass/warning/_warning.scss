@@ -1,0 +1,103 @@
+.warning {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    max-width: 1600px;
+    padding: 0 11px;
+    margin: 0 auto;
+    // background-color: $background-color;
+    padding: 10px 10px 14px 15px;
+    @media screen and (min-width: 480px) {
+        width: 480px;
+    }
+    @media screen and (min-width: 768px) {
+        width: 768px;
+        // justify-content: center;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+    }
+    @media screen and (min-width: 1600px) {
+        width: 1600px;
+    }
+}
+.warning-container {
+    max-width: 100%;
+    background-color: $background-color;
+}
+.header__warning-ip {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+        align-items: center;
+        margin-right: 15px;
+    }
+}
+.header__warning-ip-text {
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.33;
+    color: $warn-text-color;
+    fill: $warn-text-color;
+    margin-bottom: 5px;
+    & svg {
+        margin-right: 4px;
+    }
+    @media screen and (min-width: 768px) {
+        margin-right: 15px;
+        margin-bottom: 0;
+    }
+}
+.header__warning-ip-address {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.33;
+    color: $secondary-text-color;
+}
+.header__warning-learn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    @media screen and (min-width: 768px) {
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+}
+.header__warning-learn-link {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.33;
+    color: $primary-bg-color;
+    text-decoration: none;
+    
+}
+.header__warning-learn-text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.33;
+    color: $secondary-text-color;
+    @media screen and (min-width: 768px) {
+        margin-right: 15px;
+    }
+}
+.header__warning-button {
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    background: none;
+    border: none;
+    fill: $secondary-text-color;
+}

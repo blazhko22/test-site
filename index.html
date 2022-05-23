@@ -9,9 +9,37 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
-<body>    
-         <!-- Шапка -->
-        <header class="header">
+<body>  
+        <div class="warning-container">
+            <div class="warning">
+                    <div class="header__warning-ip">
+                        <p class="header__warning-ip-text">
+                            <svg
+                                width="24"
+                                height="24"
+                            >
+                                <use href="./img/1/icon.svg#icon-alert"></use>
+                            </svg>
+                            You are not protected
+                        </p>
+                        <p class="header__warning-ip-address">Your IP Address: 107.3.176.194</p>
+                    </div>
+                    <div class="header__warning-learn">
+                        <a class="header__warning-learn-link" href="./">Learn More &rsaquo;</a>
+                        <p class="header__warning-learn-text">Your ISP: Comcast Cable</p>
+                    </div>
+                    <button class="header__warning-button">
+                        <svg
+                                width="24"
+                                height="24"
+                            >
+                                <use href="./img/1/icon.svg#icon-close"></use>
+                            </svg>
+                    </button>
+            </div> 
+        </div>
+         
+        <header class="header">            
             <div class="container header__container">                
                 <button
                     class="menu-toggle js-open-menu"
@@ -76,7 +104,10 @@
                         </ul>
                     </nav>
                 </div> 
-                <button class="header__button">log in</button> 
+                <div class="header__button-block">
+                    <button class="header__button-log">log in</button>
+                    <button class="header__button-get">get started</button> 
+                </div>
             </div>
         </header>  
         <!-- Текст --> 

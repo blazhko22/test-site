@@ -2,13 +2,12 @@
     background-color: $primary-bg-color;
     padding-top: 31px;
     margin-left: auto;
-    margin-right: auto;
-   
-    // @media screen and (min-width: 1600px) {
-    //   max-width: 1600px;
-    //   padding-top: 200px;
-    //   padding-bottom: 200px;
-    //   height: 600px;
+    margin-right: auto;   
+    // @media screen and (min-width: 768px) {
+    //   // max-width: 768px;
+    //   // padding-top: 200px;
+    //   // padding-bottom: 200px;
+    //   // height: 600px;
     // }
 }
 .hero__container {
@@ -17,10 +16,14 @@
     border-radius: 6px 6px 6px 6px;
     border: 1px solid $border-input;
     box-shadow: 0px 4px 0px $box-shadow;
+    @media screen and (min-width: 768px) {
+      display: flex;
+    }
 }
 .hero__container-image {
     @media screen and (min-width: 768px) {       
-        width: 100%;
+        width: 400px;
+        height: 250px;
     }
     @media screen and (min-width: 1200px) {       
         width: 270px;
@@ -30,6 +33,9 @@
 }
 .hero__container-box {
   padding: 30px 30px 14px 30px;  
+  @media screen and (min-width: 768px) {
+    padding: 15px 15px 14px 15px;
+  }
 }
 .hero__container-box-text {
   font-family: 'Roboto';
