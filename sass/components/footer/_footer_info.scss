@@ -1,23 +1,32 @@
+.footer__block-unit {
+    margin-top: 54px;
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 58px;
+    }
+}
 .footer__block-info {
     display: flex;
     justify-content: space-between;
-    margin-top: 54px;
+}
+.footer__block-info-box {
+    @media screen and (min-width: 1200px) {
+        margin-right: 46px;
+    }
 }
 .footer__block-info-box-title {
-    font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.28;
     letter-spacing: 1px;
     text-transform: uppercase;
-    color: $primary-text-color;
 }
 .footer__block-info-box-company {
     margin-top: 18px;
 }
 .footer__block-info-box-company-list {
-    font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;

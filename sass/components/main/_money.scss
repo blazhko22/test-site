@@ -1,14 +1,20 @@
 .money {
    background-image: linear-gradient(161.3deg, #3D4251 7.63%, #272B35 90.9%);
+   @media screen and (min-width: 1200px) {
+      margin-top: 73px;
+   }
  }
  .money__container {
    padding-top: 60px;
    padding-bottom: 40px;
    padding-left: 30px;
    padding-right: 30px;
+   @media screen and (min-width: 1200px) {
+      padding-left: 0;
+      padding-right: 0;
+   }
  }
  .money__title {
-   font-family: 'Roboto';
    font-style: normal;
    font-weight: 300;
    font-size: 32px;
@@ -19,6 +25,11 @@
  }
  .money__list {
    margin-top: 40px;
+   @media screen and (min-width: 1200px) {
+      display: flex;
+      justify-content: space-between;
+   }
+   
  }
  .money__list-item {
    display: flex;
@@ -35,9 +46,17 @@
    &:hover {
       border: 4px solid $warn-text-color;
    }
+   @media screen and (min-width: 1200px) {
+      width: 380px;
+      height: 340px;
+      &:hover {
+         border: 4px solid #4CB649;
+         transform: scale(1.05);
+         transition-duration: 1000ms;
+      }
+   }
  }
  .money__list-item-title {
-   font-family: 'Roboto';
    font-style: normal;
    font-weight: 500;
    font-size: 14px;
@@ -64,7 +83,6 @@
     align-items: center;
  }
  .money__list-item-box-sign {
-   font-family: 'Roboto';
    font-style: normal;
    font-weight: 300;
    font-size: 24px;
@@ -72,7 +90,6 @@
    color: $primary-title-text-color;
  }
  .money__list-item-box-price {
-   font-family: 'Roboto';
    font-style: normal;
    font-weight: 300;
    font-size: 56px;
@@ -81,7 +98,6 @@
    color: $primary-title-text-color;
  }
  .money__list-item-box-token { 
-   font-family: 'Roboto';
    font-style: normal;
    font-weight: 300;
    font-size: 24px;
@@ -89,7 +105,6 @@
    color: $primary-title-text-color;
  }
  .money__list-item-text {
-   font-family: 'Roboto';
    font-style: normal;
    font-weight: 400;
    font-size: 14px;
@@ -109,6 +124,10 @@
     &:hover {
        background-color: $warn-text-color;
        border: 1px solid $warn-text-color;
+       @media screen and (min-width: 1200px) {
+         background-color: $extra-color;
+         border: 1px solid $extra-color;
+       }
     }
  }
  .money__list-item-text-price {
@@ -117,7 +136,6 @@
     margin-right: 8px;
  }
  .money__list-item-text-save {
-   font-family: 'Roboto';
    font-style: normal;
    font-weight: 700;
    font-size: 14px;
@@ -129,22 +147,32 @@
    flex-direction: column;
    align-items: center;
    margin-top: 36px;
-}
-.money__block-list {
-   margin-top: 22px;
+   @media screen and (min-width: 1200px) {
+      flex-direction: row;
+      justify-content: center;
+      margin-top: 51px;
+   }
 }
 .money__block-title {
-   font-family: 'Roboto';
    font-style: normal;
    font-weight: 300;
    font-size: 18px;
    line-height: 1.56;
    color: $primary-bg-color;
+   @media screen and (min-width: 1200px) {
+      margin-right: 30px;
+   }
 }
 .money__block-list {
    display: flex;
    justify-content: space-around;
    flex-wrap: wrap;
+   margin-top: 22px;
+   @media screen and (min-width: 1200px) {
+      flex-wrap: nowrap;
+      align-items: center;
+      margin-top: 0;
+   }
 }
 .money__block-list-item {
    flex-basis: calc((100% - 30px) / 3);
@@ -152,9 +180,21 @@
    &:last-child {
       margin-bottom: 0;
    }
+   @media screen and (min-width: 1200px) {
+      margin-bottom: 0;
+      margin-right: 35px;
+      &:last-child {
+         margin-right: 0;
+      }
+   }
 }
 .money__roster {
    margin-top: 40px;
+   @media screen and (min-width: 1200px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
 }
 .money__roster-item {
    display: flex;
@@ -163,9 +203,15 @@
    &:last-child {
       margin-bottom: 0;
    }
+   @media screen and (min-width: 1200px) {
+      margin-bottom: 0;
+      margin-right: 40px;
+      &:last-child {
+         margin-right: 40px;
+      }
+   }
 }
 .money__roster-item-text {
-   font-family: 'Roboto';
    font-style: normal;
    font-weight: 500;
    font-size: 14px;

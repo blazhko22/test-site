@@ -3,12 +3,6 @@
     padding-top: 31px;
     margin-left: auto;
     margin-right: auto;   
-    // @media screen and (min-width: 768px) {
-    //   // max-width: 768px;
-    //   // padding-top: 200px;
-    //   // padding-bottom: 200px;
-    //   // height: 600px;
-    // }
 }
 .hero__container {
     margin-left: 8px;
@@ -18,6 +12,8 @@
     box-shadow: 0px 4px 0px $box-shadow;
     @media screen and (min-width: 768px) {
       display: flex;
+      margin-left: 0;
+      margin-right: 0;
     }
 }
 .hero__container-image {
@@ -26,9 +22,8 @@
         height: 250px;
     }
     @media screen and (min-width: 1200px) {       
-        width: 270px;
-        margin-right: 0;
-        margin-bottom: 0;
+        width: 600px;
+        height: 400px;
     }
 }
 .hero__container-box {
@@ -36,14 +31,19 @@
   @media screen and (min-width: 768px) {
     padding: 15px 15px 14px 15px;
   }
+  @media screen and (min-width: 1200px) {
+    padding: 60px 60px 0 60px;
+  }
 }
 .hero__container-box-text {
-  font-family: 'Roboto';
   font-style: normal;
   font-weight: 300;
   font-size: 24px;
   line-height: 1.42;
   color: $primary-title-text-color;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 84px;
+  }
 }
 .hero__container-box-block {
   margin-top: 14px;
@@ -52,7 +52,6 @@
   display: flex;
 }
 .hero__container-box-block-title-name {
-  font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -65,7 +64,6 @@
   margin-right: 8px;
 }
 .hero__container-box-block-title-date {
-  font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -74,7 +72,6 @@
   text-transform: uppercase;
 }
 .hero__container-box-block-text {
-  font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   font-size: 12px;

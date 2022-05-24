@@ -1,25 +1,28 @@
 .footer__block-box {
     margin-top: 35px;
+    @media screen and (min-width: 1200px) {
+        display: none;
+    }
 }
 .footer__block-box-block {
     display: flex;
     justify-content: space-between;
+    @media screen and (min-width: 1200px) {
+        margin-right: 69px;
+    }
 }
 .footer__block-box-legal-title {
-    font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.28;
     letter-spacing: 1px;
     text-transform: uppercase;
-    color: $primary-text-color;
 }
 .footer__block-box-legal-list {
     margin-top: 18px;
 }
 .footer__block-box-legal-list-item {
-    font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -30,22 +33,28 @@
         margin-bottom: 0;
     }
 }
+.footer__block-box-social {
+    @media screen and (min-width: 1200px) {
+        margin-top: 40px;
+    }
+}
 .footer__block-box-social-title {
-    font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.28;
     letter-spacing: 1px;
     text-transform: uppercase;
-    color: $primary-text-color;
 }
 .footer__block-box-social-list {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 18px;
-    
+    @media screen and (min-width: 1200px) {
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+    }    
 }
 .footer__block-box-social-list-item {
     flex-basis: calc((100% - 30px) / 3);
@@ -53,25 +62,33 @@
     &:nth-child(n+4) {
         margin-bottom: 0;
     }
+    @media screen and (min-width: 1200px) {
+        flex-basis: auto;
+        margin-bottom: 0;
+        margin-right: 32px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }  
 }
 .footer__block-box-about {
     margin-top: 40px;
+    @media screen and (min-width: 1200px) {
+        margin-top: 0;
+    }
 }
 .footer__block-box-social-list-item-svg {
     fill: $secondary-bg-color;
 }
 .footer__block-box-about-title {
-    font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.28;
     letter-spacing: 1px;
     text-transform: uppercase;
-    color: $primary-text-color;
 }
 .footer__block-box-about-text {
-    font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -80,7 +97,6 @@
     margin-top: 18px;
 }
 .footer__block-box-about-info {
-    font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -90,4 +106,13 @@
 }
 .top-bottom {
     margin: 10px 0;
+}
+.footer__block-tobox {
+    display: none;
+    @media screen and (min-width: 1200px) {
+        display: flex;
+    }
+}
+.footer__block-tobox-unit {
+    width: 600px;
 }

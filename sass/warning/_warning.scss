@@ -5,14 +5,12 @@
     max-width: 1600px;
     padding: 0 11px;
     margin: 0 auto;
-    // background-color: $background-color;
     padding: 10px 10px 14px 15px;
     @media screen and (min-width: 480px) {
         width: 480px;
     }
     @media screen and (min-width: 768px) {
         width: 768px;
-        // justify-content: center;
     }
     @media screen and (min-width: 1200px) {
         width: 1200px;
@@ -34,11 +32,13 @@
         align-items: center;
         margin-right: 15px;
     }
+    @media screen and (min-width: 1200px) {
+        margin-right: 32px;
+    }
 }
 .header__warning-ip-text {
     display: flex;
     align-items: center;
-    font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
     font-size: 12px;
@@ -53,9 +53,11 @@
         margin-right: 15px;
         margin-bottom: 0;
     }
+    @media screen and (min-width: 1200px) {
+        margin-right: 32px;
+    }
 }
 .header__warning-ip-address {
-    font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -73,7 +75,6 @@
     }
 }
 .header__warning-learn-link {
-    font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -83,7 +84,6 @@
     
 }
 .header__warning-learn-text {
-    font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -91,6 +91,9 @@
     color: $secondary-text-color;
     @media screen and (min-width: 768px) {
         margin-right: 15px;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-right: 32px;
     }
 }
 .header__warning-button {
